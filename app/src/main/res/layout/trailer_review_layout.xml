@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/trailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAILER : "
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvTrailer"
+            android:nestedScrollingEnabled="true">
+        </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REVIEWS : "
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/review"
+        />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvReview">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

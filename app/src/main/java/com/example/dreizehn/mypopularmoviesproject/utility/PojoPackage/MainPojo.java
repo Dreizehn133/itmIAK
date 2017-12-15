@@ -1,4 +1,4 @@
-package com.example.dreizehn.mypopularmoviesproject.utility;
+package com.example.dreizehn.mypopularmoviesproject.utility.PojoPackage;
 
 import java.util.List;
 

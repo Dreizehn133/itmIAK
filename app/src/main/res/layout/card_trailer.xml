@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardTrailer"
+    android:layout_margin="16dp"
+    android:background="#000000">
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:id="@+id/videoTrailer"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play_circle_outline_black_24dp"/>
+</android.support.v7.widget.CardView>

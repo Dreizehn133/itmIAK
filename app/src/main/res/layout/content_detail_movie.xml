@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dreizehn.mypopularmoviesproject.detailMovie"
+    tools:showIn="@layout/activity_detail_movie"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/poster"
+                android:layout_margin="16dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/movieTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#b40303"
+                    android:textSize="25sp"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:id="@+id/movieRelease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/movieRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Deskrisi : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/movieDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="#000000"/>
+        <include layout="@layout/trailer_review_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
